@@ -105,8 +105,8 @@ def train_model(batch_size=32, learning_rate=0.000838635, epochs=100, patience=3
     }
 
     #load the datasets
-    train_data_dir = 'C:/Users/bwalk/OneDrive/Documents/Fall 2024/CS 471 - Intro To Artificial Intelligence/Final Assignment/preprocessed_data'
-    val_data_dir = 'C:/Users/bwalk/OneDrive/Documents/Fall 2024/CS 471 - Intro To Artificial Intelligence/Final Assignment/TestData'
+    train_data_dir = '/preprocessed_data'
+    val_data_dir = '/TestData'
 
     train_dataset = datasets.ImageFolder(root=train_data_dir, transform=data_transforms['train'])
     val_dataset = datasets.ImageFolder(root=val_data_dir, transform=data_transforms['val'])
